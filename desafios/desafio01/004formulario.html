@@ -6,26 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
 </head>
-<header>
-    <table align="right">
-        <tr>
-            <td>
-                <form action=""><input type="submit" value="Página principal"></form>
-            </td>
-            <td>
-                <form action="002login.html"><input type="submit" value="Login"></form>
-            </td>
-        </tr>
-    </table>
+<header class="flex-container">
+    <div>
+        <h2>Formulário</h2>
+    </div>
+    <div>
+        <table align="right">
+            <tr>
+                <td>
+                    <form action=""><input type="submit" value="Página principal"></form>
+                </td>
+                <td>
+                    <form action="002login.html"><input type="submit" value="Login"></form>
+                </td>
+            </tr>
+        </table>
+    </div>
 </header>
 <body>
-    <h2>Formulário</h2>
     <hr>
         <table>
             <form action="002login.html">
                 <tr>
                     <td><label for="nome">Nome: </label></td>
-                    <td><input type="text" required="true" id="nome" name="Nome"></td>
+                    <td><input type="text" required="true" id="nome" name="Nome"><td>
                 </tr>
                 <tr>
                     <td><label for="sobrenome">Sobrenome: </label></td>
@@ -55,8 +59,8 @@
                     </td>
                 </tr>
                 <tr>
-                    <td><label for="idade">Data de nascimento: </label></td>
-                    <td><input type="date" required="true" id="idade" name="idade"></td>
+                    <td><label for="idade">Idade: </label></td>
+                    <td><select name="idade" id="idade"><option value="selecionar">Selecionar</option><option value="g1">18-29<option value="g2">30-44<option value="g3">45+</option></select></td>
                 </tr>
                 <tr>
                     <td><label for="foto">Foto de perfil: </label></td>

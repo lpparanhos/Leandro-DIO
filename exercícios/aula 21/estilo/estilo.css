@@ -1,5 +1,10 @@
+body{
+    background-color:red;
+}
 p{
-    color:chocolate;
+    background: rgba( 255,255,255,0.1 );
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 10px );
 }
 .botao{
     color:darkseagreen;
@@ -23,9 +28,9 @@ th{
     font-family:'Courier New', Courier, monospace;
 }
 table{
-    border:1px solid darkgrey;
-    justify-content: center;
-    
+    background: rgba( 255,255,255,0.1 );
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 10px );
 }
 td{
     border:1px solid darkgrey;
