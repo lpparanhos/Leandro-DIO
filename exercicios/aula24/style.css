@@ -1,0 +1,24 @@
+.a{
+    background-color: aliceblue;
+}
+.b{
+    background-color:antiquewhite;
+}
+.c{
+    background-color:aqua;
+}
+.d{
+    background-color:aquamarine;
+}
+.e{
+    background-color:azure;
+}
+.f{
+    background-color:beige;
+}
+.container{
+    display: grid;
+    grid-template-rows: 150px;
+    grid-template-columns: 150px 50px 50px;
+    grid-gap: 50px;
+}
