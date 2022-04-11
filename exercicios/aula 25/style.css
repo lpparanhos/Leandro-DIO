@@ -1,0 +1,47 @@
+.container{
+    background-color:antiquewhite
+}
+
+.cadastro{
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.dados{
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.container__cadastro{
+    background-color:cadetblue
+}
+
+.cadastro__input{
+    background-color:coral;
+    border-radius: 5px;
+}
+
+.cadastro__button{
+    background-color:burlywood;
+    border-radius: 5px;
+}
+
+.dados__input{
+    background-color:cornflowerblue;
+    border-radius: 5px;
+}
+
+.dados__button{
+    background-color:cornflowerblue;
+    border-radius: 5px;
+}
+
+.dados__button--hover:hover{
+    background-color:coral;
+}
+
+.cadastro__button--hover:hover{
+    background-color:cornflowerblue;
+}
