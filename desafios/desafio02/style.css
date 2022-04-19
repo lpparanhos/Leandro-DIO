@@ -67,7 +67,7 @@ form input:focus{
     border: 1px solid #1877f2
 }
 .right__loginBtn{
-    background-color: #1877f2;
+    background-color: #0ae527;
     padding: 15px;
     text-align: center;
     text-decoration: none;
@@ -79,12 +79,12 @@ form input:focus{
     transition: 0.5s;
 }
 .right__loginBtn--hover:hover{
-    background-color: #4257b2;
+    background-color: #f10d0d;
 }
 .right__forget{
     margin: 15px 0;
     text-decoration: none;
-    color: #1877f2;
+    color: #f21818;
     font-family: 'Arial';
     font-size: 14px;
 }
