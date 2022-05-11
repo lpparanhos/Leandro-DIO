@@ -5,50 +5,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/css/all.css"></script>
 </head>
-<header class="flex-container">
-    <div>
-        <h2>Formulário</h2>
-    </div>
-    <div>
-        <table>
-            <tr>
-                <td>
-                    <form action=""><input type="submit" value="Página principal"></form>
-                </td>
-                <td>
-                    <form action="002login.html"><input type="submit" value="Login"></form>
-                </td>
-            </tr>
-        </table>
-    </div>
+<header>
+    <table align="right">
+        <tr>
+            <td>
+                <form action=""><input type="submit" value="Página principal"></form>
+            </td>
+            <td>
+                <form action="002login.html"><input type="submit" value="Login"></form>
+            </td>
+        </tr>
+    </table>
 </header>
 <body>
+    <h2>Formulário</h2>
     <hr>
         <table>
             <form action="002login.html">
                 <tr>
-                    <td><label for="nome">Nome: </label></td>
-                    <td><input type="text" required="true" id="nome" name="Nome"><td>
+                    <td>
+                        <label for="nome">Nome: </label>
+                    </td>
+                    <td>
+                        <input type="text" required="true" id="nome" name="Nome">
+                    <td>
                 </tr>
                 <tr>
-                    <td><label for="sobrenome">Sobrenome: </label></td>
-                    <td><input type="text" required="true" id="sobrenome" name="sobrenome"></td>
+                    <td>
+                        <label for="sobrenome">Sobrenome: </label>
+                    </td>
+                    <td>
+                        <input type="text" required="true" id="sobrenome" name="sobrenome">
+                    </td>
                 </tr>
                 <tr>
-                    <td><label for="endereco">Endereço: </label></td>
-                    <td><textarea name="endereco" required="true" id="endereco" cols="21" rows="3"></textarea></td>
+                    <td>
+                        <label for="endereco">Endereço: </label>
+                    </td>
+                    <td>
+                        <textarea name="endereco" required="true" id="endereco" cols="21" rows="3"></textarea>
+                    </td>
                 </tr>
                 <tr>
-                    <td><label for="disciplinas">Disciplinas: </label></td>
-                    <td><input type="checkbox" name="disciplinas" id="programacao">Programação <br>
+                    <td>
+                        <label for="disciplinas">Disciplinas: </label>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="disciplinas" id="programacao">Programação <br>
                     <input type="checkbox" name="disciplinas" id="logica">Lógica <br>
                     <input type="checkbox" name="disciplinas" id="algoritmos">Algoritmos <br>
                     <input type="checkbox" name="disciplinas" id="bancodedados">Banco de dados <br>
-                    <input type="checkbox" name="disciplinas" id="mobile">Mobile</td>
+                    <input type="checkbox" name="disciplinas" id="mobile">Mobile
+                    </td>
                 </tr>
                 <tr>
-                    <td><label for="genero">Gênero: </label></td>
+                    <td>
+                        <label for="genero">Gênero: </label>
+                    </td>
                     <td>
                         <input type="radio" required="true" id="maculino" name="genero" value="Masculino">
                         <label for="masculino">Masculino</label>
@@ -59,15 +75,25 @@
                     </td>
                 </tr>
                 <tr>
-                    <td><label for="idade">Idade: </label></td>
-                    <td><select name="idade" id="idade"><option value="selecionar">Selecionar</option><option value="g1">18-29<option value="g2">30-44<option value="g3">45+</option></select></td>
+                    <td>
+                        <label for="idade">Idade: </label>
+                    </td>
+                    <td>
+                        <select name="idade" id="idade"><option value="selecionar">Selecionar</option><option value="g1">18-29<option value="g2">30-44<option value="g3">45+</option></select>
+                    </td>
                 </tr>
                 <tr>
-                    <td><label for="foto">Foto de perfil: </label></td>
-                    <td><input type="file" id="foto" name="foto"></td>
+                    <td>
+                        <label for="foto">Foto de perfil: </label>
+                    </td>
+                    <td>
+                        <input type="file" id="foto" name="foto">
+                    </td>
                 </tr>
                 <tr>
-                    <td><input type="submit" value="Enviar e fazer login" onclick="alert('Registrando os campos preenchidos...\nPreencha os campos exigidos corretamente ou apenas aguarde o sistema carregar.')"></form></td>
+                    <td>
+                        <input type="submit" value="Enviar e fazer login" onclick="alert('Registrando os campos preenchidos...\nPreencha os campos exigidos corretamente ou apenas aguarde o sistema carregar.')">
+                    </td>
                 </tr>
             </form>
         </table>
