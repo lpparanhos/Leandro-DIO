@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Fictitious</title>
-        <link rel="shortcut icon" href="assets/img/oie_transparent.png" type="image/x-icon">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-        <script defer src="https://use.fontawesome.com/releases/v5.3.1/css/all.css"></script>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fictitious</title>
+    <link rel="shortcut icon" href="assets/img/oie_transparent.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="assets/style/style.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/css/all.css"></script>
+</head>
+<body>
     <header class="header">
         <nav class="navbar has-shadow is-spaced" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
@@ -41,23 +43,30 @@
             </div>
         </nav>
     </header>
-    <body>
-    <h1><strong>Login</strong></h1>
-    <hr>
-        <table>
-            <form action="index.html">
-            <tr>
-                <td><label for="email">Email:   </label></td>
-                <td><label for="senha">Senha:   </label></td>
-            </tr>
-            <tr>   
-                <td><input type="email" required="true" id="email" name="email"></td>
-                <td><input type="password" required="true" id="senha" name="senha"></td>
-            </tr>
-            <tr>
-                <td><input type="submit" value="Enviar" onclick="alert('Verificando credenciais...\nPreencha os campos exigidos corretamente ou apenas aguarde o sistema carregar.')"></form><p>ou</p> 
-                <form action="003cadastro.html"><input type="submit" value="Cadastre-se"></form></td>
-            </tr>
-        </table>
+<h1><strong>Login</strong></h1>
+<hr>
+    <table>
+        <form action="index.html">
+        <tr>
+            <td><label for="email">Email:   </label></td>
+            <td><label for="senha">Senha:   </label></td>
+        </tr>
+        <tr>   
+            <td><input type="email" required="true" id="email" name="email"></td>
+            <td><input type="password" required="true" id="senha" name="senha"></td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="Enviar" onclick="alert('Verificando credenciais...\nPreencha os campos exigidos corretamente ou apenas aguarde o sistema carregar.')"></form><p>ou</p> 
+            <form action="003cadastro.html"><input type="submit" value="Cadastre-se"></form></td>
+        </tr>
+    </table>
+    <footer class="footer" >
+        <div class="content has-text-centered">
+            <p>
+                <strong>Fictitious Co.</strong> by <a href="https://www.linkedin.com/in/leandroparanhos/" target="_blank">Leandro Paranhos</a>.
+            </p>
+        </div>
+    </footer>
+    <script src="assets/script/script.js"></script>
 </body>
 </html>

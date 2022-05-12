@@ -1,28 +1,31 @@
-html {
+/* html {
     background: linear-gradient(#1b0d62,#1a0d4e, #180d3b, #160929, #0f0419, #000000);
     background-size: 100% 100%;
     position: relative;
-}
-footer {
+} */
+figure {
+    color: #180d3b;
     background: rgba( 255, 255, 255, 0.3 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 12.5px );
     -webkit-backdrop-filter: blur( 12.5px );
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
-}
-figure {
-    border: 2px solid rgba( 255, 255, 255, 0.18 );
+    border: 1px solid rgb(255, 255, 255);
 }
 .footer {
-    background-color: transparent;
-}
-.card-header {
+    color: #180d3b;
     background: rgba( 255, 255, 255, 0.3 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 12.5px );
     -webkit-backdrop-filter: blur( 12.5px );
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
+/* .card-header {
+    background: rgba( 255, 255, 255, 0.3 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 12.5px );
+    -webkit-backdrop-filter: blur( 12.5px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+} */
 .card {
     color: #180d3b;
     background: rgba( 255, 255, 255, 0.3 );
@@ -32,6 +35,6 @@ figure {
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
-#white-text {
+/* #white-text {
     color: aliceblue;
-}
+} */
