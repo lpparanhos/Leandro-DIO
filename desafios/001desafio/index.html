@@ -5,40 +5,109 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fictitious</title>
-    <link rel="shortcut icon" href="assets/img/logo_transparent.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/img/oie_transparent.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="assets/style/style.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/css/all.css"></script>
 </head>
 <body>
-    <section class="section">
-        <nav class="navbar" role="navigation" aria-label="main navigation">
+    <header class="header">
+        <nav class="navbar has-shadow is-spaced is-light" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
-                <a class="navbar-item" href="index.html" alternative="Fictitious">
-                <img src="assets/img/logo_transparent.png" width="48" height="48">
+                <a class="navbar-item" href="index.html">
+                    <img src="assets/img/oie_KBLWPIo2bUjv.png" width="112" height="28">
+                </a>
+            
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
                 </a>
             </div>
-            <div class="navbar-end">
-                <div class="navbar-item">
-                    <div class="buttons">
-                        <a class="button is-primary" href="003cadastro.html">
-                            <strong>Cadastro</strong>
-                        </a>
-                        <a class="button is-light" href="002login.html">
-                            Login
-                        </a>
-                    </div>
+            
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start">
+                    <a class="navbar-item" href="index.html">
+                        Página principal
+                    </a>
+                </div>
+    
+                <div class="navbar-item buttons">
+                    <a class="button is-primary" href="003cadastro.html">
+                        <strong>Cadastre-se</strong>
+                    </a>
+                    <a class="button is-light" href="002login.html">
+                        Entre
+                    </a>
                 </div>
             </div>
         </nav>
-        <h1><strong>Fictitious Co.</strong></h1>
-        <h2>Sobre a Fictitious</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis soluta recusandae nesciunt modi architecto! Consequuntur, unde sequi. Perspiciatis numquam ipsam tempore enim, a doloribus natus hic, labore voluptate excepturi laboriosam.</p>
-        <h2>Nossos valores</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, maxime sit! Quam quia dolore doloribus beatae provident nemo ratione facere voluptas quas dolorum illum, vero molestias sit accusantium nostrum ut.</p>
-        <h2>Conheça-nos em estatísticas</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A consectetur suscipit nihil obcaecati voluptatem architecto aperiam enim perferendis earum eum illo quod, temporibus amet eos omnis, nostrum iure impedit pariatur.</p>
-        <h2>Trabalhe conosco!</h2>
-        <p>Caso já possua cadastro, <a href="002login.html">clique aqui</a>, ou então <a href="003cadastro.html">registre-se!</a> </p>
+    </header>
+    <section class="section">
+        <div class="container">
+            <div class="columns has-text-justified">
+                <div class="column is-5">
+                    <figure class="image is-square">
+                        <img src="assets/img/thishorsedoesnotexist.com.jpg" alt="Gato">
+                    </figure>
+                </div>
+                <div class="column is-7">
+                    <div class="card">
+                        <header class="card-header">
+                            <p class="card-header-title">
+                                <strong>Sobre a Fictitious</strong>
+                            </p>
+                        </header>
+                        <div class="card-content">
+                            <div class="content">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis soluta recusandae nesciunt modi architecto! Consequuntur, unde sequi. Perspiciatis numquam ipsam tempore enim, a doloribus natus hic, labore voluptate excepturi laboriosam.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="card">
+                        <header class="card-header">
+                          <p class="card-header-title">
+                            <strong>Nossos valores</strong>
+                          </p>
+                        </header>
+                        <div class="card-content">
+                            <div class="content">
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi, libero voluptas dignissimos qui ullam autem ipsum, magnam nihil, iste perspiciatis porro ea. Nesciunt deserunt soluta ab, ea harum odit cum!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="card">
+                        <header class="card-header">
+                          <p class="card-header-title">
+                            <strong>Algumas estatísticas</strong>
+                          </p>
+                        </header>
+                        <div class="card-content">
+                            <div class="content">
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam molestias sed rerum facere ea atque dolorum nemo nesciunt fuga, quisquam illum consequatur, tempore eos ut voluptatibus dignissimos. Debitis!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+            <hr class="">
+            <div class="columns has-text-justified">
+                <div class="column has-text-centered">
+                    <p class="title" id="white-text">Trabalhe conosco!</p>
+                    <p id="white-text">Caso já possua cadastro, <a href="002login.html" class="link">clique aqui</a>, ou então <a href="003cadastro.html">registre-se!</a> </p>
+                </div>
+            </div>        
+        </div>
     </section>
+    <footer class="footer" >
+        <div class="content has-text-centered">
+            <p>
+                <strong>Fictitious Co.</strong> by <a href="https://www.linkedin.com/in/leandroparanhos/" target="_blank">Leandro Paranhos</a>.
+            </p>
+        </div>
+    </footer>
+    <script src="assets/script/script.js"></script>
 </body>
 </html>
