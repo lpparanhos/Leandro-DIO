@@ -1,231 +1,179 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fictitious</title>
-    <link rel="shortcut icon" href="assets/img/oie_transparent.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-    <link rel="stylesheet" href="assets/style/style.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.3.1/css/all.css"></script>
-</head>
-<body>
-    <header class="header">
-        <nav class="navbar has-shadow is-spaced" role="navigation" aria-label="main navigation">
-            <div class="navbar-brand">
-                <a class="navbar-item" href="index.html">
-                    <img src="assets/img/oie_KBLWPIo2bUjv.png" width="112" height="28">
-                </a>
-            
-                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                </a>
-            </div>
-            
-            <div id="navbarBasicExample" class="navbar-menu">
-                <div class="navbar-start">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fictitious</title>
+        <link rel="shortcut icon" href="assets/img/oie_transparent.png" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+        <link rel="stylesheet" href="assets/style/style.css">
+        <script defer src="https://use.fontawesome.com/releases/v5.3.1/css/all.css"></script>
+    </head>
+
+    <body>
+
+        <header class="header">
+            <nav class="navbar has-shadow is-spaced" role="navigation" aria-label="main navigation">
+
+                <div class="navbar-brand">
                     <a class="navbar-item" href="index.html">
-                        Página principal
+                        <img src="assets/img/oie_KBLWPIo2bUjv.png" width="112" height="28">
+                    </a>
+
+                    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
                     </a>
                 </div>
 
-                <div class="navbar-item buttons">
-                    <a class="button is-primary" href="003cadastro.html">
-                        <strong>Cadastre-se</strong>
-                    </a>
-                    <a class="button is-light" href="002login.html">
-                        Entre
-                    </a>
+                <div id="navbarBasicExample" class="navbar-menu">
+                    <div class="navbar-start">
+                        <a class="navbar-item" href="index.html">
+                            Página principal
+                        </a>
+                        <a class="navbar-item" href="#">
+                            Ações importantes
+                        </a>
+                        <a class="navbar-item" href="#">
+                            Unidades
+                        </a>
+                        <a class="navbar-item" href="#">
+                            Conquistas
+                        </a>
+                    </div>
+                    
+                    <div class="navbar-item buttons">
+                        <a class="button is-primary is-outlined" href="index.html">
+                            <strong>Entrar</strong>
+                        </a>
+                    </div>
                 </div>
-            </div>
-        </nav>
-    </header>
-    <section class="section">
-        <div class="container">
-            <div class="columns">
-                <div class="column is-5 is-offset-1">
-                    <div class="field">
-                        <label class="label">Nome</label>
-                        <div class="control">
-                          <input class="input" type="text" placeholder="Seu Nome">
-                        </div>
-                    </div>
-                    
-                    <div class="field">
-                        <label class="label">Username</label>
-                        <div class="control has-icons-left has-icons-right">
-                          <input class="input is-success" type="text" placeholder="Text input">
-                          <!-- <span class="icon is-small is-left">
-                            <i class="fas fa-user"></i>
-                          </span> -->
-                          <span class="icon is-small is-right">
-                            <i class="fas fa-check"></i>
-                          </span>
-                        </div>
-                        <p class="help is-success">This username is available</p>
-                    </div>
-                    
-                    <div class="field">
-                        <label class="label">Email</label>
-                        <div class="control has-icons-left has-icons-right">
-                          <input class="input is-danger" type="email" placeholder="Email input" value="hello@">
-                          <span class="icon is-small is-left">
-                            <i class="fas fa-envelope"></i>
-                          </span>
-                          <span class="icon is-small is-right">
-                            <i class="fas fa-exclamation-triangle"></i>
-                          </span>
-                        </div>
-                        <p class="help is-danger">This email is invalid</p>
-                    </div>
-                    
-                    <div class="field">
-                        <label class="label">Subject</label>
-                        <div class="control">
-                            <div class="select">
-                                <select>
-                                <option>Select dropdown</option>
-                                <option>With options</option>
-                                </select>
+
+            </nav>
+        </header>
+
+        <section class="section">
+            <div class="container">
+
+                <div class="columns has-text-justified">
+                    <div class="column is-5">
+                        <div class="card">
+                            <div class="card-content">
+                                <form action="index.html">
+                                    <div class="field">
+                                        <label class="label">Nome*</label>
+                                        <div class="control">
+                                        <input class="input" required="true" type="text" placeholder="Seu Nome" id="userName">
+                                        </div>
+                                    </div>
+                                
+                                    <div class="field">
+                                        <label class="label">Sobrenome*</label>
+                                        <div class="control">
+                                        <input class="input" required="true" type="text" placeholder="Seu Sobrenome" id="userSurname">
+                                        </div>
+                                    </div>
+                                    <div class="field">
+                                        <label class="label">Endereço*</label>
+                                        <div class="control">
+                                        <textarea class="textarea" required="true" placeholder="Seu Endereço" id="userAddress"></textarea>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="field">
+                                        <label class="label">Disciplinas*</label>
+                                        <div class="control">
+                                            <label class="checkbox" required="true">
+                                                <input type="checkbox" id="programacao"> Programação<br>
+                                                <input type="checkbox" id="logica"> Lógica<br>
+                                                <input type="checkbox" id="algoritmos"> Algoritmos<br>
+                                                <input type="checkbox" id="bancodedados"> Banco de dados<br>
+                                                <input type="checkbox"  id="mobile"> Mobile
+                                            </label>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="field">
+                                        <label class="label">Gênero*</label>
+                                        <div class="control">
+                                        <label class="radio">
+                                            <input type="radio" required="true" name="question" id="userGenderMasculine">
+                                            Masculino
+                                        </label>
+                                        <br>
+                                        <label class="radio">
+                                            <input type="radio" required="true" name="question" id="userGenderFeminine">
+                                            Feminino
+                                        </label>
+                                        <br>
+                                        <label class="radio">
+                                            <input type="radio" required="true" name="question" id="userGenderNoGender">
+                                            Não informar
+                                        </label>
+                                        </div>
+                                    </div>
+                                    <div class="field">
+                                        <label class="label">Idade*</label>
+                                        <div class="control">
+                                            <div class="select">
+                                                <select required="true">
+                                                    <option>Selecionar Idade</option>
+                                                    <option>18~29 anos</option>
+                                                    <option>30~44 anos</option>
+                                                    <option>45+ anos</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="field">
+                                        <label class="label">Foto de perfil</label>
+                                    <div class="file is-small">
+                                        <label class="file-label">
+                                            <input class="file-input" type="file" name="resume">
+                                                <span class="file-cta">
+                                                    <span class="file-label">
+                                                        Fazer upload…
+                                                    </span>
+                                                </span>
+                                        </label>
+                                    </div>
+                                    </div>
+                                
+                                    <div class="card-content">
+                                        <div class="field is-grouped">
+                                            <div class="control">
+                                                <a class="button is-danger is-outlined" href="003cadastro.html">
+                                                    Voltar
+                                                </a>
+                                            </div>
+                                            <div class="control">
+                                                <button class="button is-primary">Enviar e entrar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
                         </div>
-                    </div>
-                    
-                    <div class="field">
-                        <label class="label">Message</label>
-                        <div class="control">
-                          <textarea class="textarea" placeholder="Textarea"></textarea>
-                        </div>
-                    </div>
-                    
-                    <div class="field">
-                        <div class="control">
-                          <label class="checkbox">
-                            <input type="checkbox">
-                            I agree to the <a href="#">terms and conditions</a>
-                          </label>
-                        </div>
-                    </div>
-                    
-                    <div class="field">
-                        <div class="control">
-                          <label class="radio">
-                            <input type="radio" name="question">
-                            Yes
-                          </label>
-                          <label class="radio">
-                            <input type="radio" name="question">
-                            No
-                          </label>
-                        </div>
-                    </div>
-                    
-                    <div class="field is-grouped">
-                        <div class="control">
-                          <button class="button is-link">Submit</button>
-                        </div>
-                        <div class="control">
-                          <button class="button is-link is-light">Cancel</button>
-                        </div>
+
                     </div>
                 </div>
             </div>
+        </section>
 
-            <!-- <div class="eliminar">
-                <h2>Formulário</h2>
-                <hr>
-                    <table>
-                        <form action="002login.html">
-                            <tr>
-                                <td>
-                                    <label for="nome">Nome: </label>
-                                </td>
-                                <td>
-                                    <input type="text" required="true" id="nome" name="Nome">
-                                <td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <label for="sobrenome">Sobrenome: </label>
-                                </td>
-                                <td>
-                                    <input type="text" required="true" id="sobrenome" name="sobrenome">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <label for="endereco">Endereço: </label>
-                                </td>
-                                <td>
-                                    <textarea name="endereco" required="true" id="endereco" cols="21" rows="3"></textarea>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <label for="disciplinas">Disciplinas: </label>
-                                </td>
-                                <td>
-                                    <input type="checkbox" name="disciplinas" id="programacao">Programação <br>
-                                <input type="checkbox" name="disciplinas" id="logica">Lógica <br>
-                                <input type="checkbox" name="disciplinas" id="algoritmos">Algoritmos <br>
-                                <input type="checkbox" name="disciplinas" id="bancodedados">Banco de dados <br>
-                                <input type="checkbox" name="disciplinas" id="mobile">Mobile
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <label for="genero">Gênero: </label>
-                                </td>
-                                <td>
-                                    <input type="radio" required="true" id="maculino" name="genero" value="Masculino">
-                                    <label for="masculino">Masculino</label>
-                                    <input type="radio" required="true" id="feminino" name="genero" value="Feminino">
-                                    <label for="javascript">Feminino</label>
-                                    <input type="radio" required="true" id="na" name="genero" value="NA">
-                                    <label for="na">Não informar</label>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <label for="idade">Idade: </label>
-                                </td>
-                                <td>
-                                    <select name="idade" id="idade"><option value="selecionar">Selecionar</option><option value="g1">18-29<option value="g2">30-44<option value="g3">45+</option></select>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <label for="foto">Foto de perfil: </label>
-                                </td>
-                                <td>
-                                    <input type="file" id="foto" name="foto">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <input type="submit" value="Enviar e fazer login" onclick="alert('Registrando os campos preenchidos...\nPreencha os campos exigidos corretamente ou apenas aguarde o sistema carregar.')">
-                                </td>
-                            </tr>
-                        </form>
-                    </table>
-                    <table>
-                        <tr>
-                            <td><a href="003cadastro.html">Voltar à página<br>anterior</a></td>
-                        </tr>
-                    </table>
-            </div> -->
-        </div>
-    </section>
-    <footer class="footer" >
-        <div class="content has-text-centered">
-            <p>
-                <strong>Fictitious Co.</strong> by <a href="https://www.linkedin.com/in/leandroparanhos/" target="_blank">Leandro Paranhos</a>.
-            </p>
-        </div>
-    </footer>
-    <script src="assets/script/script.js"></script>
-</body>
+        <footer class="footer" >
+            <div class="content has-text-centered">
+                <p>
+                    <strong>Fictitious Co.</strong> by <a href="https://www.linkedin.com/in/leandroparanhos/" target="_blank">Leandro Paranhos</a>.
+                </p>
+            </div>
+        </footer>
+
+        <script src="assets/script/script.js"></script>
+
+    </body>
+    
 </html>

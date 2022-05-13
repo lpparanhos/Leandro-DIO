@@ -1,76 +1,114 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fictitious</title>
-    <link rel="shortcut icon" href="assets/img/oie_transparent.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-    <link rel="stylesheet" href="assets/style/style.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.3.1/css/all.css"></script>
-</head>
-<body>
-    <header class="header">
-        <nav class="navbar has-shadow is-spaced" role="navigation" aria-label="main navigation">
-            <div class="navbar-brand">
-                <a class="navbar-item" href="index.html">
-                    <img src="assets/img/oie_KBLWPIo2bUjv.png" width="112" height="28">
-                </a>
-            
-                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                </a>
-            </div>
-            
-            <div id="navbarBasicExample" class="navbar-menu">
-                <div class="navbar-start">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fictitious</title>
+        <link rel="shortcut icon" href="assets/img/oie_transparent.png" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+        <link rel="stylesheet" href="assets/style/style.css">
+        <script defer src="https://use.fontawesome.com/releases/v5.3.1/css/all.css"></script>
+    </head>
+
+    <body>
+
+        <header class="header">
+            <nav class="navbar has-shadow is-spaced" role="navigation" aria-label="main navigation">
+                <div class="navbar-brand">
                     <a class="navbar-item" href="index.html">
-                        Página principal
+                        <img src="assets/img/oie_KBLWPIo2bUjv.png" width="112" height="28">
+                    </a>
+
+                    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
                     </a>
                 </div>
-    
-                <div class="navbar-item buttons">
-                    <a class="button is-primary" href="003cadastro.html">
-                        <strong>Cadastre-se</strong>
-                    </a>
-                    <a class="button is-light" href="002login.html">
-                        Entre
-                    </a>
+
+                <div id="navbarBasicExample" class="navbar-menu">
+                    <div class="navbar-start">
+                        <a class="navbar-item" href="index.html">
+                            Página principal
+                        </a>
+                        <a class="navbar-item" href="#">
+                            Ações importantes
+                        </a>
+                        <a class="navbar-item" href="#">
+                            Unidades
+                        </a>
+                        <a class="navbar-item" href="#">
+                            Conquistas
+                        </a>
+                    </div>
+
+                    <div class="navbar-item buttons">
+                        <a class="button is-primary is-outlined" href="index.html">
+                            <strong>Entrar</strong>
+                        </a>
+                    </div>
                 </div>
+
+            </nav>
+        </header>
+
+        <section class="section">
+            <div class="container">
+
+                <div class="columns has-text-justified">
+                    <div class="column is-5">
+                        <div class="card">
+                            <div class="card-content">
+                                <form action="004formulario.html">
+
+                                    <div class="field">
+                                        <label class="label">Email</label>
+                                        <p class="control">
+                                            <input class="input" type="email" required="true" placeholder="example@example.com">
+                                        </p>
+                                    </div>
+
+                                    <div class="field">
+                                        <label class="label">Senha</label>
+                                        <p class="control">
+                                            <input class="input" type="password" required="true" placeholder="********">
+                                        </p>
+                                    </div>
+
+                                    <div class="field">
+                                        <label class="label">Confirmar senha</label>
+                                        <p class="control">
+                                            <input class="input" type="password" required="true" placeholder="********">
+                                        </p>
+                                    </div>
+
+                                    <div class="field is-right">
+                                        <div class="buttons has-addons is-right">
+                                            <button class="button is-link is-outlined is-right">Prosseguir</button>
+                                        </div>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
-        </nav>
-    </header>
-    <h1><strong>Novo usuário</strong></h1>
-    <hr>
-    <form action="004formulario.html">
-        <table>
-            <tr>
-                <td><label for="email">Email: </label></td>
-                <td><input type="email" required="true" id="email" name="email"></td>                    
-            </tr>
-            <tr>
-                <td><label for="senha">Senha: </label></td>
-                <td><input type="password" required="true" id="senha" name="senha"></td>
-            </tr>
-            <tr>
-                <td><label for="cSenha">Confirmação<br>de senha: </label></td>
-                <td><input type="password" required="true" id="cSenha" name="cSenha"></td>
-            </tr>
-            <tr>
-                <td><input type="submit" value="Enviar"></form></td>
-            </tr>
-        </table>
-    </form>
-    <footer class="footer" >
-        <div class="content has-text-centered">
-            <p>
-                <strong>Fictitious Co.</strong> by <a href="https://www.linkedin.com/in/leandroparanhos/" target="_blank">Leandro Paranhos</a>.
-            </p>
-        </div>
-    </footer>
-    <script src="assets/script/script.js"></script>
-</body>
+        </section>
+
+        <footer class="footer" >
+            <div class="content has-text-centered">
+                <p>
+                    <strong>Fictitious Co.</strong> by <a href="https://www.linkedin.com/in/leandroparanhos/" target="_blank">Leandro Paranhos</a>.
+                </p>
+            </div>
+        </footer>
+
+        <script src="assets/script/script.js"></script>
+
+    </body>
+
 </html>
