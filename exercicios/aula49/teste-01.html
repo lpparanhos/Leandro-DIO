@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+<script>
+
+    const viacep_url = "https://viacep.com.br/ws/85869747/json/"
+
+    let rua;
+    let bairro;
+    let cep;
+    let localidade;
+
+    fetch(viacep_url)
+        .then(
+            function (response) {
+                return response.json()
+            }
+        ).then(
+    (json) => {
+        //console.log(json)
+
+        let endereco = JSON.stringify(json)
+        
+        console.log("Rua: ", json.logradouro)
+        console.log("Cidade: ", json.localidade)
+        console.log("Bairro: ", json.bairro)
+        console.log("CEP: ", json.cep)
+    }
+)
+
+</script>
+
+</html>
+
+</script>
