@@ -1,14 +1,14 @@
 import './App.css';
 import React from 'react';
-import './components/helloReact';
-import helloReact from './components/helloReact';
+import './components/HelloReact';
+import HelloReact from './components/HelloReact';
 
 function App() {
   return (
     <div className="App">
 
       {/* Importando componente */}
-      <helloReact />
+      <HelloReact />
 
     </div>
   );

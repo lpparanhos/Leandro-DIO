@@ -1,4 +1,4 @@
-function helloReact() {
+function HelloReact() {
     return (
         <p>
             Esse é meu primeiro paragrafo usando a biblioteca React!
@@ -6,4 +6,4 @@ function helloReact() {
     )
 }
 
-export default helloReact
+export default HelloReact
