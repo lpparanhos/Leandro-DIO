@@ -6,8 +6,6 @@ const limpar = document.getElementById("limpar")
 
 // Validar o CEP
 
-
-
 const validarCep = (cep) => {
     //returna verdadeiro ou falso - true or false
     //Expressão regular verifica se os caracteres são numéricos e tem 8 de comprimento
@@ -19,11 +17,11 @@ const preencherDados = async (endereco) => {
 
     const div_resposta = document.createElement("div")
     div_resposta.setAttribute("class", "container")
-    div_resposta.setAttribute("id","div_resposta")
+    div_resposta.setAttribute("id", "div_resposta")
 
     const logradouro = document.createElement("p")
-    logradouro.setAttribute("class","resposta")
-    logradouro.setAttribute("id","logradouro")
+    logradouro.setAttribute("class", "resposta")
+    logradouro.setAttribute("id", "logradouro")
     logradouro.innerHTML = endereco.logradouro
 
     const bairro = document.createElement("p")
@@ -33,7 +31,7 @@ const preencherDados = async (endereco) => {
 
     const localidade = document.createElement("p")
     localidade.setAttribute("class", "resposta")
-    localidade.setAttribute("id","localidade")
+    localidade.setAttribute("id", "localidade")
     localidade.innerHTML = endereco.localidade
 
     div_resposta.appendChild(logradouro)
@@ -47,8 +45,8 @@ const preencherDados = async (endereco) => {
 const pesquisarCep = async () => {
     const cep_valor = cep.value
     try {
-        if(validarCep(cep_valor)){
-        
+        if (validarCep(cep_valor)) {
+
             const viacep_url = `https://viacep.com.br/ws/${cep_valor}/json/`
             const cep_dados = await fetch(viacep_url)
             const cep_json = await cep_dados.json()
@@ -57,23 +55,23 @@ const pesquisarCep = async () => {
 
             if (cep_json.hasOwnProperty('erro')) {
                 throw {
-                    "name":"ErroCEP",
+                    "name": "ErroCEP",
                     "message": "Não foi possível consultar o CEP"
                 }
             } else {
                 await preencherDados(cep_json)
             }
-        }else{
+        } else {
             throw {
-                "name":"ErroCEP",
-                "message":"CEP inválido"
+                "name": "ErroCEP",
+                "message": "CEP inválido"
             }
         }
     } catch (erro) {
 
         const erro_cep = document.createElement("p")
-        erro_cep.setAttribute("id","erro_cep")
-        erro_cep.setAttribute("class","erro_cep")
+        erro_cep.setAttribute("id", "erro_cep")
+        erro_cep.setAttribute("class", "erro_cep")
         erro_cep.innerHTML = erro.message
 
         document.body.appendChild(erro_cep)
@@ -88,14 +86,14 @@ const limparDados = () => {
 
     document.getElementById("cep").value = ""
 
-    if(div_resposta){
+    if (div_resposta) {
         document.body.removeChild(div_resposta)
-    }else{
+    } else {
         document.body.removeChild(erro)
     }
 
 }
 
 pesquisar.addEventListener('click', pesquisarCep)
-limpar.addEventListener('click',limparDados)
-cep.addEventListener('focus',limparDados)
+limpar.addEventListener('click', limparDados)
+cep.addEventListener('focus', limparDados)
