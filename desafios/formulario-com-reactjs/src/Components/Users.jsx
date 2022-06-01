@@ -35,4 +35,26 @@ export default function Users() {
         setCurrentUser({ id: user.id, name: user.name, username: user.username, email: user.email, age: user.age });
     }
 
+    return (
+        <div>
+            <h2>Cadastro de Usuários</h2>
+            <div>
+                <div>
+                    {
+                        <div>
+                            editing ? (
+                            <h3>Editar Usuário</h3>
+                            <EditUserForm 
+                                editing={editing}
+                                setEditing={setEditing}
+                                currentUser={currentUser}
+                                updateUser={updateUser}
+                            />
+                        </div>
+                        ) : ()
+                    }
+                </div>
+            </div>
+        </div>
+    )
 }
