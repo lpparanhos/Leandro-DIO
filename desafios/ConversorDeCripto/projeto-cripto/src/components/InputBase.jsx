@@ -19,3 +19,4 @@ const InputBase = ({label, ...props}) => (
 )
 
 export default InputBase
+

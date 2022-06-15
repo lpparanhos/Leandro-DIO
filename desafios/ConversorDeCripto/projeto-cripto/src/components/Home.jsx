@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, {useState, useEffect} from 'react'
 import CryptoTile from './CriptoTile'
 import BuyForm from './BuyForm'
 import Transactions from './Transactions'
@@ -13,6 +13,7 @@ const Home = () => {
         flexDirection: "row"
     }
 
+
     const cardsContainer = {
         display: "flex",
         justifyContent: "space-between",
@@ -24,17 +25,17 @@ const Home = () => {
         fontSize: "18px",
         borderRadius: "5px",
         border: "1px solid cadetblue",
-        color: "dimgray"
+        color:"dimgray"
     }
 
+
     const tiles = [
-        { id: 1, icon: btc, name: 'BTC', rate: 135000 },
-        { id: 2, icon: eth, name: 'ETH', rate: 7500 },
-        { id: 3, icon: ltc, name: 'LTC', rate: 250 },
+        {id: 1, icon: btc, name: 'BTC', rate: 135000},
+        {id: 2, icon: eth, name: 'ETH', rate: 7500},
+        {id: 3, icon: ltc, name: 'LTC', rate: 250},
     ]
 
     const [selectedTile, setSelectedTile] = useState(tiles[0])
-
     const [list, setList] = useState([])
 
     const handleSelect = (data) => {
@@ -52,8 +53,8 @@ const Home = () => {
                     <div style={cardsContainer}>
                         {
                             tiles.map(
-                                (coin) => (
-                                    <CryptoTile
+                                (coin) =>(
+                                    <CryptoTile 
                                         key={coin.id}
                                         data={coin}
                                         onClick={handleSelect}
@@ -64,14 +65,13 @@ const Home = () => {
                         }
                     </div>
                 </div>
-                <BuyForm data={selectedTile} onPurchase={buildList} />
+                <BuyForm data={selectedTile} onPurchase={buildList}/>
                 <div>
                     <Transactions list={list} />
                 </div>
             </div>
         </div>
     )
-    
 }
 
 export default Home

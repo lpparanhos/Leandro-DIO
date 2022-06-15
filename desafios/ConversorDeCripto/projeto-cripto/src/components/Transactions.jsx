@@ -14,12 +14,12 @@ const Transactions = ({list}) => {
                     (item) => (
                         <div>
                             <div key={item.id} className={styles.transactionLine}>
-                                <div className='transaction-name'></div>
-                                <strong>{item.name}</strong>
-                                {":"}
-                                <span>{item.converted}</span>
+                                <div className='transaction-name'>{item.id}</div>
+                                <div className='transaction-name'><strong>{item.name}</strong></div>
+                                <div className='transaction-value'>{item.converted}</div>
                             </div>
                         </div>
+                        
                     )
 
                 ):(
